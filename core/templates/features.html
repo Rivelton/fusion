@@ -1,0 +1,81 @@
+{% load static %}
+
+<section id="features" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Awesome Features</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="content-left">
+              <div class="box-item wow fadeInLeft" data-wow-delay="{{ recursos.0.delay }}">
+                <span class="icon">
+                  <i class="{{ recursos.0.icone }}"></i>
+                </span>
+                <div class="text">
+<!--                  recurso referente a views, 0 ref. a lista em admin/
+                      recurso ao nome que esta tbm em adm -->
+                  <h4>{{ recursos.0.recurso }}</h4>
+                  <p>{{ recursos.0.descricao }}</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInLeft" data-wow-delay="{{ recursos.1.delay }}">
+                <span class="icon">
+                  <i class="{{ recursos.1.icone }}"></i>
+                </span>
+                <div class="text">
+                  <h4>{{ recursos.1.recurso }}</h4>
+                  <p>{{ recursos.1.descricao }}</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInLeft" data-wow-delay="{{ recursos.2.delay }}">
+                <span class="icon">
+                  <i class="{{ recursos.2.icone }}"></i>
+                </span>
+                <div class="text">
+                  <h4>{{ recursos.2.recurso }}</h4>
+                  <p>{{ recursos.2.descricao }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
+              <img src="{% static 'img/feature/intro-mobile.png' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="content-right">
+              <div class="box-item wow fadeInRight" data-wow-delay="{{ recursos.3.delay }}">
+                <span class="icon">
+                  <i class="{{ recursos.3.icone }}"></i>
+                </span>
+                <div class="text">
+                  <h4>{{ recursos.3.recurso }}</h4>
+                  <p>{{ recursos.3.descricao }}</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInRight" data-wow-delay="{{ recursos.4.delay }}">
+                <span class="icon">
+                  <i class="{{ recursos.4.icone }}"></i>
+                </span>
+                <div class="text">
+                  <h4>{{ recursos.4.recurso }}</h4>
+                  <p>{{ recursos.4.descricao }}</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInRight" data-wow-delay="{{ recursos.5.delay }}">
+                <span class="icon">
+                  <i class="{{ recursos.5.icone }}"></i>
+                </span>
+                <div class="text">
+                  <h4>{{ recursos.5.recurso }}</h4>
+                  <p>{{ recursos.5.descricao }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
