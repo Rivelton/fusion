@@ -130,8 +130,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
-MEDIA_ROOT = Path(BASE_DIR, 'media')
+STATIC_ROOT = str(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = str(BASE_DIR, 'media')
 
 
 # Default primary key field type
